@@ -1,9 +1,11 @@
+* [首页](/)
 * 前端
     * [HTML](HTML/ch01)
     * [CSS](CSS/ch01)
     * [JavaScript](JavaScript/ch01)
 * [MySQL](MySQL/ch01)
 * [关于我](about)
+* [知乎](https://www.zhihu.com/people/mphyc)
 * [博客](https://blog.mphy.top)
 
 
