@@ -30,6 +30,14 @@
                 subMaxLevel: 3,
                 mergeNavbar: true,
                 auto2top: true,
+                coverpage: true,
+                search: {
+                    maxAge: 86400000,
+                    placeholder: '搜索',
+                    noData: '找不到结果',
+                    hideOtherSidebarContent: false,
+                    namespace: 'docsify-demo',
+                },
                 count: {
                     countable: true,
                     fontsize: '0.9em',
@@ -53,19 +61,7 @@
                 ]
             }
         </script>
-        <script>
-            window.$docsify = {
-                search: {
-                    maxAge: 86400000,
-                    paths: auto,
-                    placeholder: '搜索',
-                    noData: '找不到结果',
-                    depth: 4,
-                    hideOtherSidebarContent: false,
-                    namespace: 'docsify-demo',
-                }
-            }
-        </script>
+       
         <!-- Docsify v4 -->
         <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
         <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
