@@ -5,6 +5,6 @@
 
 > 脚踏实地，坚实基础。
 
-[Github](https://github.com/Hacker-C/notes)
+<!-- [Github](https://github.com/Hacker-C/notes) -->
 [个人博客](https://blog.mphy.top)
 [进入知识库](/#quick-start)
