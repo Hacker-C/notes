@@ -11,7 +11,8 @@
 你可以在这些平台联系我/与我交流：
 
 - 知乎：[MurphyChen](https://www.zhihu.com/people/mphyc)
-- 个人博客：[MurphyChen's Blog]()
+- 个人博客：[MurphyChen's Blog](https://blog.mphy.top)
+- 知识库：[MurphyChen's Notes](https://docs.mphy.top)
 - Bilibili：[Murphy-Chen](https://space.bilibili.com/434947088)
 - Github：[Hacker-C](https://github.com/Hacker-C)
 - QQ：1507559148
