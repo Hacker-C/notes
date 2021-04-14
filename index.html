@@ -9,13 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" href="https://z3.ax1x.com/2021/02/14/yy62NR.png" type="image/x-icon">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    
 </head>
 
 <body>
-    <nav>
-        <!--  <a href="#/about">关于我</a>
-        <a href="#/blog">博客</a> -->
-    </nav>
     <div id="app">加载中...</div>
     <p id="quick-start">
     <p>
@@ -45,6 +42,10 @@
                     color: 'rgb(90,90,90)',
                     language: 'chinese'
                 },
+                Valine: {
+                    appId: '5NufTOH2LT8vML3d2RiToJLG-gzGzoHsz',
+                    appKey: 'SwC7ErRPmhsWI3Vn10YBhsmG'
+                },
                 plugins: [
                     function (hook) {
                         var footer = [
@@ -60,19 +61,23 @@
                         });
                     }
                 ]
+
             }
         </script>
-       
-        <!-- Docsify v4 -->
-        <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-        <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-        <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script> -->
-        <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
-        <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
-        <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-sql.min.js"></script>
-        <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-        <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script> -->
-        
+
+        <script src="libs/docsify@4"></script>
+        <script src="libs/search.min.js"></script>
+        <script src="libs/zoom-image.min.js"></script>
+        <script src="libs/docsify-copy-code.js"></script>
+        <script src="libs/countable.js"></script>
+        <script src="libs/prism-sql.min.js"></script>
+        <script src="libs/docsify-pagination.min.js"></script>
+        <script src="libs/emoji.min.js"></script>
+        <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+        <script src="//unpkg.com/docsify-valine/dist/docsify-valine.min.js"></script>
+        <script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
+        <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
+        <script> mermaid.initialize({ startOnLoad: true });</script>
 </body>
 
 </html>
