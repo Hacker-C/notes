@@ -5,3 +5,4 @@
     * [ch04. SQL常见函数](MySQL/ch04)
     * [ch05. 分组查询](MySQL/ch05)
     * [ch06. 连接查询](MySQL/ch06)
+    * [ch08. 视图](MySQL/ch08)
