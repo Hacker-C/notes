@@ -6,11 +6,13 @@
 
 <a href="#/"><img src="https://cdn.jsdelivr.net/gh/hacker-c/Picture-Bed@main/avatar.jpg" alt="logo" style="zoom: 12%;"/></a> 
 
-码字不易，对你有用的话可以赏赐一下哦OVO
+码字不易，完全用爱发电，更新可能会有点慢哦~，尽量在6月内优先更完计网。
+
+<!-- 码字不易，对你有用的话可以赏赐一下哦OVO
 <details>
 <summary>（点击展开）赏你了👇</summary>
 <br>
 金额不重要~<hr>
 <img src="https://cdn.jsdelivr.net/gh/Hacker-C/Picture-Bed@main/alipay.2s2bkr07lri0.jpg"/>
 <img src="https://cdn.jsdelivr.net/gh/Hacker-C/Picture-Bed@main/wei.23wl7d70osw0.png"/>
-</details>
+</details> -->
