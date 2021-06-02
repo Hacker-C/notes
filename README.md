@@ -6,7 +6,7 @@
 
 <a href="#/"><img src="https://cdn.jsdelivr.net/gh/hacker-c/Picture-Bed@main/avatar.jpg" alt="logo" style="zoom: 12%;"/></a> 
 
-码字不易，完全用爱发电，更新可能会有点慢哦~，尽量在6月内优先更完计网。
+<font color=red size=4>重要：</font><font color=red size=3>码字不易，完全用爱发电。临近考试，更新暂停。</font>
 
 <!-- 码字不易，对你有用的话可以赏赐一下哦OVO
 <details>
