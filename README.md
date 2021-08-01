@@ -8,4 +8,4 @@
 
 <font color=red size=4>重要：</font>
 由于一些原因，计网部分更新暂停，未更新的部分将给出对应课程资源的课件PDF:
-> 阿里云盘不限速下载：提取码:3kwu 链接：https://www.aliyundrive.com/s/UUp8aLbPBta
+> 阿里云盘不限速下载： 链接：https://www.aliyundrive.com/s/zkQuo7XooKR
