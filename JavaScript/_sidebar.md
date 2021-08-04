@@ -11,3 +11,4 @@
     * [ch10. 对象](JavaScript/ch10)
     * [ch11. 内置对象](JavaScript/ch11)
     * [ch12. 复杂类型](JavaScript/ch12)
+    * [ch13. 基本数据类型](JavaScript/ch13)
