@@ -18,6 +18,5 @@
 - Bilibili：[Murphy-Chen](https://space.bilibili.com/434947088)
 - Github：[Hacker-C](https://github.com/Hacker-C)
 - QQ：1507559148
-- 微信：CG1507559148
 - E-mail: mphy@qq.com
 
