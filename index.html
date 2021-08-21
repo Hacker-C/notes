@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="https://z3.ax1x.com/2021/02/14/yy62NR.png" type="image/x-icon">
+    <link rel="shortcut icon"
+        href="https://cdn.jsdelivr.net/gh/Hacker-C/Picture-Bed@main/blog/favicon-green.fw.nv7nz75g8fk.png"
+        type="image/x-icon">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
     <!-- 流程图 -->
@@ -62,8 +64,57 @@
                             return html + footer;
                         });
                     }
-                ]
-
+                ],
+                'flexible-alerts': {
+                    style: 'flat'
+                },
+                'flexible-alerts': {
+                    note: {
+                        label: "Hinweis"
+                    },
+                    tip: {
+                        label: "Tipp"
+                    },
+                    warning: {
+                        label: "Warnung"
+                    },
+                    attention: {
+                        label: "Achtung"
+                    }
+                },
+                'flexible-alerts': {
+                    note: {
+                        label: {
+                            '/de-DE/': 'Hinweis',
+                            '/': 'Note'
+                        }
+                    },
+                    tip: {
+                        label: {
+                            '/de-DE/': 'Tipp',
+                            '/': 'Tip'
+                        }
+                    },
+                    warning: {
+                        label: {
+                            '/de-DE/': 'Warnung',
+                            '/': 'Warning'
+                        }
+                    },
+                    attention: {
+                        label: {
+                            '/de-DE/': 'Achtung',
+                            '/': 'Attention'
+                        }
+                    }
+                },
+                // scrollToTop: {
+                //     auto: true,
+                //     text: 'Top',
+                //     right: 15,
+                //     bottom: 15,
+                //     offset: 500
+                // }
 
             }
         </script>
@@ -82,7 +133,13 @@
         <script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
         <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script>
         <script> mermaid.initialize({ startOnLoad: true });</script>
-      
+        <!-- 提醒卡片 -->
+        <script src="./libs/docsify-plugin-flexible-alerts.min.js"></script>
+        <!-- 回到顶部 -->
+        <script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script>
+        <!-- <script src="./libs/jquery.goup.js"></script>
+        <script src="./libs/jquery.js"></script> -->
+
 
 </body>
 
