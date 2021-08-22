@@ -8,5 +8,8 @@
 项目源地址点击右上角logo链接即可看到，欢迎 star！
 
 <font color=red size=4>重要：</font>
-由于一些原因，计网部分更新暂停，未更新的部分将给出对应课程资源的课件PDF:
-> 阿里云盘不限速下载：https://www.aliyundrive.com/s/zkQuo7XooKR
+由于一些原因，计网部分更新暂停，未更新的部分将给出对应课程资源的课件PDF:  
+
+> [!NOTE]
+> **很抱歉之前分享的文件是空的，后来我才发现阿里云不支持分享压缩文件，已经更新了正确的链接！**  
+> 阿里云盘不限速下载：https://www.aliyundrive.com/s/DgJpfDNQgyM
