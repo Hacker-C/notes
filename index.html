@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
     <!-- 流程图 -->
+    <style>
+        :root {
+            --docsifytabs-border-color: #ededed;
+            --docsifytabs-tab-highlight-color: #42b983;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -108,13 +115,26 @@
                         }
                     }
                 },
-                // scrollToTop: {
-                //     auto: true,
-                //     text: 'Top',
-                //     right: 15,
-                //     bottom: 15,
-                //     offset: 500
-                // }
+                scrollToTop: {
+                    auto: true,
+                    text: 'Top',
+                    right: 15,
+                    bottom: 15,
+                    offset: 500
+                },
+                // pagination: {
+                //     previousText: '上一章节',
+                //     nextText: '下一章节',
+                //     crossChapter: true,
+                //     crossChapterText: true,
+                // },
+                tabs: {
+                    persist: true,      // default
+                    sync: true,      // default
+                    theme: 'classic', // default
+                    tabComments: true,      // default
+                    tabHeadings: true       // default
+                }
 
             }
         </script>
@@ -139,6 +159,7 @@
         <script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script>
         <!-- <script src="./libs/jquery.goup.js"></script>
         <script src="./libs/jquery.js"></script> -->
+        <script src="./libs/docsify-tabs@1.js"></script>
 
 
 </body>
