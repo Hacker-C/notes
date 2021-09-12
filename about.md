@@ -1,4 +1,4 @@
-<a><img src="https://cdn.jsdelivr.net/gh/Hacker-C/Picture-Bed@main/blog/avatar.22vdb4jf7ojk.jpg" alt="logo" style="zoom: 10%;" /></a>
+<a><img src="images/avatar.jpg" alt="logo" style="zoom: 10%;" /></a>
 
 目前就读于某不知名末流 211，大二，专业计算机科学与技术，前端搬砖练习生。
 
