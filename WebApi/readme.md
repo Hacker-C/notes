@@ -5,3 +5,4 @@
 - [ch01. WebApi简介](WebApi/ch01)
 - [ch02. DOM](WebApi/ch02)
 - [ch03. 事件高级](WebApi/ch03)
+- [ch04. BOM 基础](WebApi/ch04)
