@@ -3,7 +3,9 @@
     * [CSS3/HTML5](CSS/readme)
     * [移动端Web开发](MobileWebDev/readme)
     * [JavaScript基础](JavaScript/readme)
-    * [WebApi(DOM BOM)](WebApi/readme)
+    * [WebApi（DOM和BOM）](WebApi/readme)
+    * [网页特效（PC端和移动端）](Web-Effects/readme)
+    * [JavaScript进阶](JS-Advance/readme)
 * **编程语言**
     * [**Java SE**](Java/readme)
     * [**Python**](Python/readme)
