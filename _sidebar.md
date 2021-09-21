@@ -14,5 +14,5 @@
     * [计算机网络](C-Network/readme)
     * [操作系统](OS/readme)
     * [编译原理](CP/readme)
-* **读书笔记**
-    * [算法笔记](Algorithm-Notes/readme)
+<!-- * **读书笔记**
+    * [算法笔记](Algorithm-Notes/readme) -->
