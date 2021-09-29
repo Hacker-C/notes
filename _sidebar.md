@@ -4,6 +4,7 @@
     * [移动端Web开发](MobileWebDev/readme)
     * [JavaScript基础](JavaScript/readme)
     * [Web Api（DOM和BOM）](WebApi/readme)
+    * [jQuery](jQuery/readme)
     * [JavaScript进阶](JS-Advance/readme)
 * **编程语言**
     * [**Java SE**](Java/readme)
