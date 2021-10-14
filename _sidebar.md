@@ -7,13 +7,10 @@
     * [jQuery](jQuery/readme)
     * [Ajax](Ajax/readme)
     * [JavaScript进阶](JS-Advance/readme)
+    <!-- * [ECMAScript6+](ECMAScript6+/readme) -->
 * **编程语言**
     * [**Java SE**](Java/readme)
     * [**Python**](Python/readme)
-    * [**MySQL**](MySQL/readme)
 * **计算机基础**
+    * [**MySQL**](MySQL/readme)
     * [计算机网络](C-Network/readme)
-    * [操作系统](OS/readme)
-    * [编译原理](CP/readme)
-<!-- * **读书笔记**
-    * [算法笔记](Algorithm-Notes/readme) -->
