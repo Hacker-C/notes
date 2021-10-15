@@ -7,7 +7,7 @@
     * [jQuery](jQuery/readme)
     * [Ajax](Ajax/readme)
     * [JavaScript进阶](JS-Advance/readme)
-    <!-- * [ECMAScript6+](ECMAScript6+/readme) -->
+    * [ECMAScript6/6+](ECMAScript6+/readme)
 * **编程语言**
     * [**Java SE**](Java/readme)
     * [**Python**](Python/readme)
