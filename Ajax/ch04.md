@@ -1,0 +1,65 @@
+# （四）RESTful 和 XML
+
+## 1. RESTful 风格的 API
+
+传统风格地址回顾：
+```js
+GET http://www.example.com/getUsers         // 获取用户列表
+GET http://www.example.com/getUser?id=1     // 比如获取某一个用户的信息
+POST http://www.example.com/modifyUser      // 修改用户信息
+GET http://www.example.com/deleteUser?id=1  // 删除用户信息
+```
+
+RESTful API：一套关于设计请求的规范。
+- `GET`：获取数据
+- `POST`：添加数据
+- `PUT`：更新数据
+- `DELETE`： 删除数据
+
+RESTful API 的实现：
+
+|请求|请求地址|功能|
+|-|-|-|
+|GET| http://www.example.com/users |获取用户列表数据|
+|POST| http://www.example.com/users |用户数据|
+|GET| http://www.example.com/users/1 |创建(添加)|
+|PUT| http://www.example.com/users/1 |获取用户ID为1的用户信息修改用户ID为1的用户信息|
+|DELETE| http://www.example.com/users/1  |删除用户ID为1的用户信息|
+
+## 2. XML 基础
+
+### 2.1 概述
+
+XML 的全称是 extensible markup language，代表 **可扩展标记语言**，它的作用是 **传输和存储数据**。
+```xml
+<students> 
+    <student>
+        <sid>001</sid>
+        <name>张三</name>
+    </student>
+    <student>
+        <sid>002</sid>
+        <name>王二丫</name>
+    </student>
+</students>
+```
+
+### 2.2 XML DOM
+
+XML DOM 即 XML 文档对象模型，是 w3c 组织定义的一套操作 XML 文档对象的API。浏览器会将 XML 文档解析成文档对象模型。  
+
+实际上，现在使用 XML 发送响应数据已经很少使用了，这里只作了解。
+
+案例：请求并处理一个返回 `xml` 类型的数据
+```js
+let xhr = new XMLHttpRequest();
+xhr.open('get', '/xml');
+xhr.send();
+xhr.onload = function () {
+    // xhr.responseXML 获取服务器端返回的xml数据
+    var xmlDocument = xhr.responseXML;
+    // 获取标签内内容
+    var title = xmlDocument.getElementsByTagName('title')[0].innerHTML;
+    console.log(title);
+}
+```
