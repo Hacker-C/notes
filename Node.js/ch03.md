@@ -1,0 +1,79 @@
+# （三）Buffer 缓冲器
+
+背景：
+- 浏览器没有储存图片文件等媒体文件的需求，JS 存的都是一些基本数据类型。
+- 服务器需要存储图片/视频/音频等媒体文件，因此有了 Buffer 缓冲器。
+
+## 1. Buffer 是什么
+
+Buffer 是一个和数组类似的对象，不同是 Buffer 是专门用来保存二进制数据的。
+
+## 2. Buffer 特点
+
+- 它是一个【类似于数组】的对象，用于存储数据（存储的是二进制数据）。
+- Buffer 的效率很高，存储和读取很快，它是直接对计算机的内存进行操作。
+- Buffer 的大小一旦确定了，不可修改。
+- 每个元素占用内存的大小为1字节。
+- Buffer 是Node中的非常核心的模块，无需下载、无需引入,直接即可使用
+
+## 3. Buffer 的操作
+
+### 3.1 Buffer 的创建
+
+```js
+// 创建一个指定size大小的Buffer
+// 安全，里面全是0
+var buf = Buffer.alloc(size);  
+
+//不安全，可能包含旧数据，需要重写所有数据
+var buf = Buffer.allocUnsafe(size);   
+```
+
+1. 方式一：
+    ```js
+    let buf = new Buffer(10)
+    console.log(buf)
+    ```
+    `new Buffer` 方式创建一个 Buffer 的实例对象，性能特别差（需要在堆里开辟空间，然后清理空间-置零）
+
+2. 方式二
+    ```js
+    let buf2 = Buffer.alloc(10)
+    console.log(buf2)
+    ```
+    创建一个 Buffer 的实例对象，性能比 `new Buffer()`稍强一点，在堆中开辟一块空间（该块空间没有人用过）
+
+3. 方式三
+    ```js
+    let buf3 = Buffer.allocUnsafe(10)
+    console.log(buf3)
+    ```
+    创建一个Buffer的实例对象，性能最好的，在堆里开辟空间。
+
+
+### 3.2 获取 Buffer 的长度
+
+```js
+// 获取Buffer的长度
+buf.length
+```
+
+### 3.3 Buffer 的转换
+
+```js
+// 相当于Buffer.alloc(size);
+var buf = Buffer.allocUnsafe(size);
+buf.fill(0)   //将可能出现的敏感数据用0全部填充
+
+// 将一个字符串转换为Buffer
+var buf = Buffer.from(str);
+
+// 将一个Buffer转换为字符串
+var str = buf.toString();
+```
+
+注意：
+- 输出的 Buffer 为什么不是二进制？   
+    输出的是16进制，但是存储的是二进制吗，输出的时候会自动转16进制。
+- 输出的Buffer不为空？   
+    在堆里开辟空间，可能残留着别人用过的数据，所以 allocUnsafe
