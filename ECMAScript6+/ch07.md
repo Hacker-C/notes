@@ -1,0 +1,192 @@
+# （七）ECMAScript 11 新特性
+
+## 1. 类的私有属性
+
+ES11 提供了类的私有属性，在类的外部无法访问该属性。只有再类的内部能访问。
+
+```js
+class Person{
+  //公有属性
+  name;
+  //私有属性
+  #age;
+  #weight;
+  //构造方法
+  constructor(name, age, weight){
+    this.name = name;
+    this.#age = age;
+    this.#weight = weight;
+  }
+
+  intro(){
+    console.log(this.name);
+    console.log(this.#age);
+    console.log(this.#weight);
+  }
+}
+
+//实例化
+const girl = new Person('晓红', 18, '45kg');
+
+// 外部无法直接访问
+// console.log(girl.name);
+// console.log(girl.#age);
+// console.log(girl.#weight);
+
+girl.intro();
+```
+
+## 2. allSettled
+
+该 `Promise.allSettled()` 方法返回一个在所有给定的 `promise` 都已经 `fulfilled` 或 `rejected` 后的 `promise`，并带有一个对象数组，每个对象表示对应的 `promise` 结果。`allSettled` 方法返回的 `Promise` 对象始终是成功（`fulfilled`）的。  
+使用场景：
+- 有多个彼此不依赖的异步任务成功完成时使用。
+- 想得到每个 `promise` 的结果时使用。
+
+对比于 `Promise.all()`，`all()` 也接受一个 `Promise` 对象数组参数，只要有一个失败（`rejected`），那么返回的  `Promise` 对象就是失败（`rejected`）的。  
+使用场景：
+- 传进去的 `Promise` 对象彼此依赖，且需要在其中任何一个失败的时候停止。
+
+两个 `Promise` 都是成功的情况：
+```js
+let p1 = new Promise((resolve, reject) => {
+  resolve('用户数据-1')
+})
+
+let p2 = new Promise((resolve, reject) => {
+  resolve('订单数据-2')
+})
+
+let res1 = Promise.allSettled([p1, p2])
+let res2 = Promise.all([p1, p2])
+console.log(res1)
+console.log(res2)
+```
+输出结果：
+![es11-1](https://cdn.jsdelivr.net/gh/Hacker-C/Picture-Bed@main/docs/es11-1.2fgw7vvkb0kk.png)
+
+一个成功，一个失败：
+```js
+let p1 = new Promise((resolve, reject) => {
+  resolve('用户数据-1')
+})
+
+let p2 = new Promise((resolve, reject) => {
+  reject('失败了')
+})
+
+let res1 = Promise.allSettled([p1, p2])
+let res2 = Promise.all([p1, p2])
+console.log(res1)
+console.log(res2)
+```
+打印结果：
+![ES11-2](https://cdn.jsdelivr.net/gh/Hacker-C/Picture-Bed@main/docs/ES11-2.17q27y7sy9mk.png)
+
+## 3. matchAll
+
+`matchAll()` 方法返回一个包含所有匹配正则表达式的结果及分组捕获组的迭代器。
+
+```js
+const regexp = /t(e)(st(\d?))/g;
+const str = 'test1test2';
+
+const array = [...str.matchAll(regexp)];
+
+console.log(array[0]);
+// expected output: Array ["test1", "e", "st1", "1"]
+
+console.log(array[1]);
+// expected output: Array ["test2", "e", "st2", "2"]
+```
+
+## 4. 可选链
+
+### 4.1 定义
+
+可选链 `?.` 是一种访问嵌套对象属性的安全的方式。即使中间的属性不存在，也不会出现错误。  
+原则：如果可选链 `?.` 前面的部分是 `undefined` 或者 `null`，它会停止运算并返回该部分。
+
+```js
+let user = {
+  address: {
+  }
+}
+console.log( user?.address?.street ); // undefined（不报错）
+```
+
+### 4.2 短路效应
+
+短路效应：正如前面所说的，如果 `?.` 左边部分不存在，就会立即停止运算（“短路效应”）。所以，如果后面有任何函数调用或者副作用，它们均不会执行。  
+这有和 `&&` 的作用类似，但上述改用 `&&` 会显得代码冗余度高：
+```js
+console.log(user && user.address && user.address.street)
+```
+
+
+
+### 4.3 其它变体：?.()，?.[]
+
+可选链 `?.` 不是一个运算符，而是一个特殊的语法结构。它还 **可以与函数和方括号一起使用**。  
+例如，将 `?.()` 用于调用一个可能不存在的函数（即使不存在也不报错）。
+```js
+function foo() {
+  console.log('hello')
+}
+foo?.()
+// hello
+```
+`?.[]` 允许从一个可能不存在的对象上安全地读取属性。（即使不存在也不报错）。
+```js
+let obj = {
+  key: 123
+}
+console.log(obj?.['key'])
+// 123
+```
+
+## 5. 动态 import 导入
+
+```js
+const btn = document.getElementById('btn');
+
+btn.onclick = function(){
+  import('./hello.js').then(module => {
+    module.hello();
+}
+```
+
+## 6. BigInt
+
+`BigInt` 是一种特殊的数字类型，它提供了对任意长度整数的支持。
+
+创建 `bigint` 的方式有两种：在一个整数字面量后面加 `n` 或者调用 `BigInt` 函数，该函数从字符串、数字等中生成 `bigint`。
+
+```js
+let n1 = 123n
+let n2 = 456n
+let n3 = BigInt(789)
+console.log(typeof n1) // bigint
+console.log(n1+n2) // 579n
+console.log(n2+n3) // 1245n
+```
+
+比较运算符：
+- 例如 `<` 和 `>`，使用它们来对 `bigint` 和 nu`mber 类型的数字进行比较没有问题：
+  ```js
+  alert( 2n > 1n ); // true
+  alert( 2n > 1 ); // true
+  ```
+- 但是请注意，由于 `number` 和 `bigint` 属于不同类型，它们可能在进行 `==` 比较时相等，但在进行 `===`（严格相等）比较时不相等：
+```js
+alert( 1 == 1n ); // true
+alert( 1 === 1n ); // false
+```
+
+## 7. globalThis
+
+全局对象提供可在任何地方使用的变量和函数。默认情况下，这些全局变量内置于语言或环境中。  
+在浏览器中，它的名字是 `window`，对 Node.js 而言，它的名字是 `global`，其它环境可能用的是别的名字。  
+ES11中 `globalThis` 被作为全局对象的标准名称加入到了 JavaScript 中，所有环境都应该支持该名称。所有主流浏览器都支持它。  
+使用场景：
+假设我们的环境是浏览器，我们将使用 `window`。如果你的脚本可能会用来在其他环境中运行，则最好使用 `globalThis`。
