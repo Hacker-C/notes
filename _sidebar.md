@@ -9,6 +9,7 @@
     * [JavaScript 进阶](JS-Advance/readme)
     * [ECMAScript6/6+](ECMAScript6+/readme)
     * [Node.js](Node.js/readme)
+    * [Vue.js](Vue/readme)
 * **编程语言**
     * [**Java SE**](Java/readme)
     * [**Python**](Python/readme)
