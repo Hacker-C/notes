@@ -6,10 +6,11 @@
     * [Web Api（DOM和BOM）](WebApi/readme)
     * [jQuery](jQuery/readme)
     * [Ajax](Ajax/readme)
-    * [JavaScript 进阶](JS-Advance/readme)
+    * [JavaScript 高级](JS-Advance/readme)
     * [ECMAScript6/6+](ECMAScript6+/readme)
+    * [Promise](Promise/readme.md)
     * [Node.js](Node.js/readme)
-    <!-- * [Vue.js](Vue/readme) -->
+    * [JavaScript 数据结构与算法](js-datastructures-algorithms/readme)
 * **编程语言**
     * [**Java SE**](Java/readme)
     * [**Python**](Python/readme)
