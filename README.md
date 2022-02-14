@@ -7,4 +7,4 @@
 
 **访问卡顿可访问国内gitee地址**：https://mphy.gitee.io/notes
 
-<font color=red>很多朋友都在求离线文档下载，点击本站右上角 github logo 即可获取哦。<br>整理不易，不要忘了给个 star 或 follow 哟 🎈。</font>
+<font color=red>很多朋友都在求离线文档下载，点击本站右上角 github logo 即可获取哦。<br>整理不易，不要忘了给个 star 和 follow 哟 🎈。</font>
