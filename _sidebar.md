@@ -8,7 +8,7 @@
     * [Ajax](Ajax/readme)
     * [JavaScript 高级](JS-Advance/readme)
     * [ECMAScript6/6+](ECMAScript6+/readme)
-    * [Promise](Promise/readme.md)
+    * [Promise & async/await](Promise/readme.md)
     * [Node.js](Node.js/readme)
     * [JavaScript 数据结构与算法](js-datastructures-algorithms/readme)
 * **编程语言**
