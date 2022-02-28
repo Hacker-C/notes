@@ -6,3 +6,5 @@
 > 推荐书籍：HTTP权威指南、图解HTTP
 
 - [ch01. HTTP 协议基础及发展历史](HTTP/ch01)
+- [ch02. HTTP 各种特性总览](HTTP/ch02)
+
