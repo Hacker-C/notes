@@ -1,5 +1,12 @@
 <h1>MurphyChen's Notes</h1>
 
+<font color=red size=4> ❗ 重要通知：本站正在进行迁移，从第三方服务转移到国内服务器。域名转出需要一定时间，预计需要5-7天。</font>
+
+在此期间，`docs.mphy.top` 域名暂时无法访问，可代替访问的有：
+- https://mphy.gitee.io/notes
+- http://124.222.44.115:8080
+
+---
 
 你好，你现在看到的是我的技术知识库，持续更新...
 
