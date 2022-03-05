@@ -2,8 +2,7 @@
 
 <font color=red size=4> ❗ 重要通知：本站正在进行迁移，从第三方服务转移到国内服务器。域名转出需要一定时间，预计需要 5-7 天。</font>
 
-在此期间，若 `docs.mphy.top` 无法访问，可代替的有：
-- https://mphy.gitee.io/notes
+在此期间，若 `docs.mphy.top` 无法访问，可访问：
 - http://124.222.44.115:8080
 
 ---
