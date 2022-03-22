@@ -1,256 +1,266 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MurphyChen's Notes</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.jsdelivr.net/gh/Hacker-C/Picture-Bed@main/blog/favicon-green.fw.nv7nz75g8fk.png"
+      type="image/x-icon"
+    />
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
+    <!-- <link rel="stylesheet" href="./libs/vue.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.12.1/themes/vue.min.css"
+      integrity="sha512-Ofuff/As5MXt1cOVWpU4ND48tYNjnE0Wc6qv0FHqW+FGueMbJyjJWNNpJ3m+92V1txLsEiDxl6UKTIDanAep6g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.bootcss.com/KaTeX/0.10.0/katex.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.bootcss.com/KaTeX/0.10.0/katex.min.js"></script>
 
-<head>
-  <meta charset="UTF-8">
-  <title>MurphyChen's Notes</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="shortcut icon"
-    href="https://cdn.jsdelivr.net/gh/Hacker-C/Picture-Bed@main/blog/favicon-green.fw.nv7nz75g8fk.png"
-    type="image/x-icon">
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
-  <!-- <link rel="stylesheet" href="./libs/vue.css"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.12.1/themes/vue.min.css"
-    integrity="sha512-Ofuff/As5MXt1cOVWpU4ND48tYNjnE0Wc6qv0FHqW+FGueMbJyjJWNNpJ3m+92V1txLsEiDxl6UKTIDanAep6g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.bootcss.com/KaTeX/0.10.0/katex.min.css" rel="stylesheet">
-  <script src="https://cdn.bootcss.com/KaTeX/0.10.0/katex.min.js"></script>
-
-  <!-- 流程图 -->
-  <style>
-    :root {
-      --docsifytabs-border-color: #ededed;
-      --docsifytabs-tab-highlight-color: #42b983;
-    }
-
-    code {
-      font-family: consolas !important;
-      font-size: 1rem !important;
-    }
-
-    [class^="lang"] {
-      font-family: consolas !important;
-      font-size: 1rem !important;
-      line-height: 1.3rem !important;
-      padding-top: 1rem !important;
-      padding-bottom: 1rem !important;
-    }
-
-    kbd,
-    table,
-    p,
-    li {
-      font-size: 1rem !important;
-      margin: 8px;
-    }
-
-    h1 {
-      font-size: 1.5rem !important;
-    }
-
-    h2 {
-      font-size: 1.4rem !important;
-    }
-
-    h3 {
-      font-size: 1.3rem !important;
-    }
-
-    h4 {
-      font-size: 1.2rem !important;
-    }
-
-    h5 {
-      font-size: 1.1rem !important;
-    }
-
-    .katex {
-      font-size: 1.1rem !important;
-    }
-
-
-    h2,
-    h3,
-    h4,
-    h5 {
-      font-family: consolas, 'Microsoft YaHei' !important;
-    }
-
-    .scroll-to-top {
-      -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-      align-items: center !important;
-      -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-      justify-content: center !important;
-      background: #fff !important;
-      border-radius: 4px !important;
-      width: 40px !important;
-      height: 40px !important;
-      line-height: 38px !important;
-      color: #8590a6 !important;
-      -webkit-box-shadow: 0 1px 3px rgb(18 18 18 / 10%) !important;
-      box-shadow: 0 1px 3px rgb(18 18 18 / 10%) !important;
-    }
-
-    .scroll-to-top:hover {
-      background-color: #42b983 !important;
-      color: #fff !important;
-    }
-  </style>
-
-</head>
-
-<body>
-  <div id="app">加载中...</div>
-  <p id="quick-start">
-  <p>
-    <script>
-      window.$docsify = {
-        name: 'MurphyChen\'s Notes',
-        logo: '',
-        repo: 'Hacker-C/notes',
-        topMargin: 90,
-        loadSidebar: true,
-        loadNavbar: true,
-        subMaxLevel: 3,
-        mergeNavbar: false,
-        topMargin: 90,
-        auto2top: true,
-        coverpage: false,
-        notFoundPage: 'my404.md',
-        search: {
-          maxAge: 86400000,
-          placeholder: '搜索',
-          noData: '找不到结果',
-          hideOtherSidebarContent: false,
-          namespace: 'docsify-demo',
-        },
-        count: {
-          countable: true,
-          fontsize: '0.9em',
-          color: 'rgb(90,90,90)',
-          language: 'chinese'
-        },
-        Valine: {
-          appId: '5NufTOH2LT8vML3d2RiToJLG-gzGzoHsz',
-          appKey: 'SwC7ErRPmhsWI3Vn10YBhsmG'
-        },
-        plugins: [
-          function (hook) {
-            var footer = [
-              '<hr/>',
-              '<footer>',
-              '<span>Created by <span>',
-              '<span><a href="/#/about">MurphyChen</a> &copy;2021-2022.</span>',
-              '</footer>'
-            ].join('');
-
-            hook.afterEach(function (html) {
-              return html + footer;
-            });
-          }
-        ],
-        'flexible-alerts': {
-          style: 'flat'
-        },
-        'flexible-alerts': {
-          note: {
-            label: "Hinweis"
-          },
-          tip: {
-            label: "Tipp"
-          },
-          warning: {
-            label: "Warnung"
-          },
-          attention: {
-            label: "Achtung"
-          }
-        },
-        'flexible-alerts': {
-          note: {
-            label: {
-              '/de-DE/': 'Hinweis',
-              '/': 'Note'
-            }
-          },
-          tip: {
-            label: {
-              '/de-DE/': 'Tipp',
-              '/': 'Tip'
-            }
-          },
-          warning: {
-            label: {
-              '/de-DE/': 'Warnung',
-              '/': 'Warning'
-            }
-          },
-          attention: {
-            label: {
-              '/de-DE/': 'Achtung',
-              '/': 'Attention'
-            }
-          }
-        },
-        scrollToTop: {
-          auto: true,
-          text: 'Top',
-          right: 15,
-          bottom: 15,
-          offset: 500
-        },
-        // pagination: {
-        //     previousText: '上一章节',
-        //     nextText: '下一章节',
-        //     crossChapter: true,
-        //     crossChapterText: true,
-        // },
-        tabs: {
-          persist: true,      // default
-          sync: true,      // default
-          theme: 'classic', // default
-          tabComments: true,      // default
-          tabHeadings: true       // default
-        }
+    <!-- 流程图 -->
+    <style>
+      :root {
+        --docsifytabs-border-color: #ededed;
+        --docsifytabs-tab-highlight-color: #42b983;
       }
-    </script>
 
-    <script src="libs/docsify@4"></script>
-    <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.12.1/docsify.min.js"
+      code {
+        font-family: consolas !important;
+        font-size: 1rem !important;
+      }
+
+      [class^='lang'] {
+        font-family: consolas !important;
+        font-size: 1rem !important;
+        line-height: 1.3rem !important;
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+      }
+
+      kbd,
+      table,
+      p,
+      li {
+        font-size: 1rem !important;
+        margin: 8px;
+      }
+
+      h1 {
+        font-size: 1.5rem !important;
+      }
+
+      h2 {
+        font-size: 1.4rem !important;
+      }
+
+      h3 {
+        font-size: 1.3rem !important;
+      }
+
+      h4 {
+        font-size: 1.2rem !important;
+      }
+
+      h5 {
+        font-size: 1.1rem !important;
+      }
+
+      .katex {
+        font-size: 1.1rem !important;
+      }
+
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: consolas, 'Microsoft YaHei' !important;
+      }
+
+      .scroll-to-top {
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important;
+        -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+        justify-content: center !important;
+        background: #fff !important;
+        border-radius: 4px !important;
+        width: 40px !important;
+        height: 40px !important;
+        line-height: 38px !important;
+        color: #8590a6 !important;
+        -webkit-box-shadow: 0 1px 3px rgb(18 18 18 / 10%) !important;
+        box-shadow: 0 1px 3px rgb(18 18 18 / 10%) !important;
+      }
+
+      .scroll-to-top:hover {
+        background-color: #42b983 !important;
+        color: #fff !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app">加载中...</div>
+    <p id="quick-start"></p>
+    <p>
+      <script>
+        window.$docsify = {
+          name: "MurphyChen's Notes",
+          logo: '',
+          repo: 'Hacker-C/notes',
+          topMargin: 90,
+          loadSidebar: true,
+          loadNavbar: true,
+          subMaxLevel: 3,
+          mergeNavbar: false,
+          topMargin: 90,
+          auto2top: true,
+          coverpage: false,
+          notFoundPage: 'my404.md',
+          search: {
+            maxAge: 86400000,
+            placeholder: '搜索',
+            noData: '找不到结果',
+            hideOtherSidebarContent: false,
+            namespace: 'docsify-demo'
+          },
+          count: {
+            countable: true,
+            fontsize: '0.9em',
+            color: 'rgb(90,90,90)',
+            language: 'chinese'
+          },
+          Valine: {
+            appId: '5NufTOH2LT8vML3d2RiToJLG-gzGzoHsz',
+            appKey: 'SwC7ErRPmhsWI3Vn10YBhsmG'
+          },
+          plugins: [
+            function (hook) {
+              var footer = [
+                '<hr/>',
+                '<footer>',
+                '<span>Created by <span>',
+                '<span><a href="https://mphy.top">MurphyChen</a> &copy;2021-2022 | <a style="text-decoration:none;color:#333" href="https://beian.miit.gov.cn">湘ICP备 2022004296号</a></span>',
+                '</footer>'
+              ].join('')
+
+              hook.afterEach(function (html) {
+                return html + footer
+              })
+            }
+          ],
+          'flexible-alerts': {
+            style: 'flat'
+          },
+          'flexible-alerts': {
+            note: {
+              label: 'Hinweis'
+            },
+            tip: {
+              label: 'Tipp'
+            },
+            warning: {
+              label: 'Warnung'
+            },
+            attention: {
+              label: 'Achtung'
+            }
+          },
+          'flexible-alerts': {
+            note: {
+              label: {
+                '/de-DE/': 'Hinweis',
+                '/': 'Note'
+              }
+            },
+            tip: {
+              label: {
+                '/de-DE/': 'Tipp',
+                '/': 'Tip'
+              }
+            },
+            warning: {
+              label: {
+                '/de-DE/': 'Warnung',
+                '/': 'Warning'
+              }
+            },
+            attention: {
+              label: {
+                '/de-DE/': 'Achtung',
+                '/': 'Attention'
+              }
+            }
+          },
+          scrollToTop: {
+            auto: true,
+            text: 'Top',
+            right: 15,
+            bottom: 15,
+            offset: 500
+          },
+          // pagination: {
+          //     previousText: '上一章节',
+          //     nextText: '下一章节',
+          //     crossChapter: true,
+          //     crossChapterText: true,
+          // },
+          tabs: {
+            persist: true, // default
+            sync: true, // default
+            theme: 'classic', // default
+            tabComments: true, // default
+            tabHeadings: true // default
+          }
+        }
+      </script>
+
+      <script src="libs/docsify@4"></script>
+      <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.12.1/docsify.min.js"
       integrity="sha512-Pt6M2HFXOZxiNMEwxXx8aQD/ilDwvqb7ybZDMJTGD6TNpfKluyjsbYWHxbT/7mgQ4+DD77lQTBlrIffLz24UCA=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-    <script src="libs/search.min.js"></script>
-    <script src="libs/zoom-image.min.js"></script>
-    <script src="libs/docsify-copy-code.js"></script>
-    <script src="libs/countable.js"></script>
-    <script src="libs/prism-sql.min.js"></script>
-    <script src="libs/docsify-pagination.min.js"></script>
-    <!-- <script src='//unpkg.com/valine/dist/Valine.min.js'></script> -->
-    <script src="libs/Valine.min.js"></script>
-    <!-- <script src="//unpkg.com/docsify-valine/dist/docsify-valine.min.js"></script> -->
-    <script src="./libs/docsify-valine.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
-    <!-- <script src="//unpkg.com/mermaid/dist/mermaid.js"></script> -->
-    <script src="./libs/mermaid.js"></script>
-    <!-- <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script> -->
-    <script src="./libs/docsify-mermaid.js"></script>
-    <script> mermaid.initialize({ startOnLoad: true });</script>
-    <!-- 提醒卡片 -->
-    <script src="libs/docsify-plugin-flexible-alerts.min.js"></script>
-    <!-- 回到顶部 -->
-    <!-- <script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script> -->
-    <script src="./libs/docsify-scroll-to-top.min.js"></script>
-    <script src="libs/docsify-tabs@1.js"></script>
-    <script src="libs/prism-less.js"></script>
-    <script src="libs/prism-bash.min.js"></script>
-    <script src="libs/prism-c.js"></script>
-    <script src="libs/prism-cpp.js"></script>
-    <script src="libs/prism-mongodb.min.js"></script>
-
-</body>
-
+      <script src="libs/search.min.js"></script>
+      <script src="libs/zoom-image.min.js"></script>
+      <script src="libs/docsify-copy-code.js"></script>
+      <script src="libs/countable.js"></script>
+      <script src="libs/prism-sql.min.js"></script>
+      <script src="libs/docsify-pagination.min.js"></script>
+      <!-- <script src='//unpkg.com/valine/dist/Valine.min.js'></script> -->
+      <script src="libs/Valine.min.js"></script>
+      <!-- <script src="//unpkg.com/docsify-valine/dist/docsify-valine.min.js"></script> -->
+      <script src="./libs/docsify-valine.min.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+      <!-- <script src="//unpkg.com/mermaid/dist/mermaid.js"></script> -->
+      <script src="./libs/mermaid.js"></script>
+      <!-- <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script> -->
+      <script src="./libs/docsify-mermaid.js"></script>
+      <script>
+        mermaid.initialize({ startOnLoad: true })
+      </script>
+      <!-- 提醒卡片 -->
+      <script src="libs/docsify-plugin-flexible-alerts.min.js"></script>
+      <!-- 回到顶部 -->
+      <!-- <script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script> -->
+      <script src="./libs/docsify-scroll-to-top.min.js"></script>
+      <script src="libs/docsify-tabs@1.js"></script>
+      <script src="libs/prism-less.js"></script>
+      <script src="libs/prism-bash.min.js"></script>
+      <script src="libs/prism-c.js"></script>
+      <script src="libs/prism-cpp.js"></script>
+      <script src="libs/prism-mongodb.min.js"></script>
+    </p>
+  </body>
 </html>
