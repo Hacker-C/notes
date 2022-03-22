@@ -1,10 +1,8 @@
 <h1>MurphyChen's Notes</h1>
 
-<font color=red size=4> ❗ 重要通知：本站正在进行迁移，从第三方服务转移到国内服务器。域名转出需要一定时间，预计需要 5-7 天。</font>
-
-在此期间，`docs.mphy.top` 域名可能无法访问，可代替的：
-
-- http://124.222.44.115:8080
+<font color=red size=4> ❗ 重要通知：本站已进行迁移完成！</font>
+- 稳定地址：https://docs.mphy.top
+- 未来不迷路：https://github.com/Hacker-C/notes
 
 ---
 
