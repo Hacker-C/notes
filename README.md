@@ -11,3 +11,5 @@
 欢迎各位指正错误或提出讨论，建议在主页评论，我一般能看到，有问题可以QQ或者邮箱联系。
 
 <font color=red>很多朋友都在求离线文档下载，点击本站右上角 github logo 即可获取哦。<br>整理不易，不要忘了给个 star 和 follow 哟 🎈。</font>
+
+> 离线文档使用方法：文件都是 `.md` 后缀的文件，这是一种 `markdown` 语法，可以使用 `typora` 文本编辑器打开，typora 下载地址：https://typoraio.cn
