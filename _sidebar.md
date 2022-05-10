@@ -11,7 +11,6 @@
     * [Promise & async/await](Promise/readme.md)
     * [Node.js](Node.js/readme)
     * [HTTP 协议原理与应用](HTTP/readme)
-    * [JavaScript 数据结构与算法](js-datastructures-algorithms/readme)
 * **编程语言**
     * [**Java SE**](Java/readme)
     * [**Python**](Python/readme)
