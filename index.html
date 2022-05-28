@@ -5,17 +5,12 @@
     <title>MurphyChen's Notes</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <link
       rel="shortcut icon"
       href="https://cdn.jsdelivr.net/gh/Hacker-C/Picture-Bed@main/blog/favicon-green.fw.nv7nz75g8fk.png"
       type="image/x-icon"
     />
-    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
-    <!-- <link rel="stylesheet" href="./libs/vue.css"> -->
     <link
       rel="stylesheet"
       href="./libs/vue.min.css"
@@ -23,8 +18,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css" integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js" integrity="sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./libs/katex.min.css" />
+
+    <!-- CDN files for docsify-katex -->
     <style>
       :root {
         --docsifytabs-border-color: #ededed;
@@ -206,12 +202,6 @@
           bottom: 15,
           offset: 500
         },
-        // pagination: {
-        //     previousText: '上一章节',
-        //     nextText: '下一章节',
-        //     crossChapter: true,
-        //     crossChapterText: true,
-        // },
         tabs: {
           persist: true, // default
           sync: true, // default
@@ -222,35 +212,21 @@
       }
     </script>
 
-    <script src="libs/docsify@4"></script>
+    <script src="https://unpkg.com/docsify@4.12.2/lib/docsify.min.js"></script>
     <script src="libs/search.min.js"></script>
     <script src="libs/zoom-image.min.js"></script>
-    <script src="libs/docsify-copy-code.js"></script>
+    <script src="https://unpkg.com/docsify-copy-code@2.1.1/dist/docsify-copy-code.min.js"></script>
     <script src="libs/countable.js"></script>
-    <script src="libs/prism-sql.min.js"></script>
     <script src="libs/docsify-pagination.min.js"></script>
-    <!-- <script src='//unpkg.com/valine/dist/Valine.min.js'></script> -->
     <script src="libs/Valine.min.js" defer></script>
-    <!-- <script src="//unpkg.com/docsify-valine/dist/docsify-valine.min.js"></script> -->
-    <script src="./libs/docsify-valine.min.js" defer></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
-    <!-- <script src="//unpkg.com/mermaid/dist/mermaid.js"></script> -->
-    <!-- <script src="./libs/mermaid.js"></script> -->
-    <!-- <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js"></script> -->
-    <!-- <script src="./libs/docsify-mermaid.js"></script> -->
-    <script>
-      // mermaid.initialize({ startOnLoad: true })
-    </script>
+    <script src="https://unpkg.com/docsify-valine@1.0.4/dist/docsify-valine.min.js"></script>
     <!-- 提醒卡片 -->
-    <script src="libs/docsify-plugin-flexible-alerts.min.js"></script>
+    <script src="https://unpkg.com/docsify-plugin-flexible-alerts@1.1.0/dist/docsify-plugin-flexible-alerts.min.js"></script>
     <!-- 回到顶部 -->
-    <!-- <script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script> -->
     <script src="./libs/docsify-scroll-to-top.min.js"></script>
-    <script src="libs/docsify-tabs@1.js"></script>
-    <script src="libs/prism-less.js"></script>
-    <script src="libs/prism-bash.min.js"></script>
-    <script src="libs/prism-c.js"></script>
-    <script src="libs/prism-cpp.js"></script>
-    <script src="libs/prism-mongodb.min.js"></script>
+    <script src="https://unpkg.com/docsify-tabs@1.5.2/dist/docsify-tabs.min.js"></script>
+    <script src="./libs/docsify-katex.js"></script>
+    <!-- CDN files for docsify-katex -->
+    <script src="./libs/docsify-katex.js"></script>
   </body>
 </html>
