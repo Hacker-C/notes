@@ -1,9 +1,13 @@
 <h1>MurphyChen's Notes</h1>
 
-<font color=red size=4> 通知：本站已进行迁移完成！</font>
+<font color=red size=4> 重要：</font>
 
 - 稳定地址：https://docs.mphy.top
 - 未来不迷路：https://github.com/Hacker-C/notes
+
+最近搞了个 IDK-JS（我不知道的JS），都是一些 JS 中易错/怪异/有趣的东西，看了之后可能会颠覆你对 JS 的认知。适合想要进阶学习 JS 的同学，感兴趣可以看看。
+
+在线地址：http://idk-js.mphy.top/
 
 ---
 
@@ -17,7 +21,7 @@
 
 使用方法：
 
-1. 离线笔记：每个文件夹中的文件都是 `.md` 后缀的文件，这是一种 `markdown` 语法，可以使用 `typora` 文本编辑器打开，typora 下载地址：https://typoraio.cn
+1. 离线笔记：点开 [github](https://github.com/Hacker-C/notes) 后，这里面每个文件夹中的文件都是 `.md` 后缀的文件，这是一种 `markdown` 语法，可以使用 `typora` 文本编辑器打开，typora 下载地址：https://typoraio.cn
 
 2. 如果你要本地运行测试：
 
