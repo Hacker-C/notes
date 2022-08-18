@@ -1,6 +1,5 @@
 * [首页](/)
-* [关于我](/about) 
-* [个人博客](https://blog.mphy.top)
+* [关于我](https://mphy.top/) 
+* [离线文档/源码](https://github.com/Hacker-C/notes) 
 * [IDK-JS](http://idk-js.mphy.top)
-* [Bilibili](https://space.bilibili.com/434947088)
 
